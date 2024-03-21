@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Inter", sans-serif !important;
+  background-image: url(https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  overflow-x: hidden;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.icon-btn {
+  cursor: pointer;
+  transition: "color .2s ease-in-out";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.delete-btn:hover {
+  color: #DC2626;
 }
 
-.App-link {
-  color: #61dafb;
+.add-btn:hover {
+  color: #15803D;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  margin-left: 300px;
+}
+
+.note-card {
+  cursor: pointer;
+  transition: "background-color .3s ease-in-out"
+}
+
+.note-card:hover {
+  background-color: #E5E5E5;
+}
+
+.selected {
+  color: #fff;
+  background-color: #1E40AF;
 }
